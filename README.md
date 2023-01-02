@@ -1,4 +1,4 @@
-#gpt-error-fix-recommender-42
+# gpt-error-fix-recommender-42
 A Visual Studio Code extension that uses OpenAI's GPT-3 model to recommend solutions to programming errors.
 
 #Features
