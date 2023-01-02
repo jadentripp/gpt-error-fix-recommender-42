@@ -1,7 +1,7 @@
 {
   "name": "gpt-error-fix-recommender-42",
   "displayName": "GPT-Error-Fix-Recommender",
-  "description": "This uses the OpenAI api and GPT3 model to summarize error messages that your console outputs. These may be wrong. These may be helpful. BYOK.",
+  "description": "This extension uses the OpenAI API and GPT-3 model to summarize error messages that your console outputs. These recommendations may be incorrect and are provided for informational purposes only. BYOK (Bring Your Own Key) - you must provide your own OpenAI API key to use this extension.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.74.0"
@@ -10,32 +10,20 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:gpt-error-fix-recommender-42.helloWorld"
+    "onCommand:gpt-recommend-solution"
   ],
   "main": "./extension.js",
   "contributes": {
     "commands": [{
-      "command": "gpt-error-fix-recommender-42.helloWorld",
-      "title": "Hello World"
-    }, {
       "command": "gpt-recommend-solution",
       "title": "Recommend Solution"
     }]
   },
-  "scripts": {
-    "lint": "eslint .",
-    "pretest": "yarn run lint",
-    "test": "node ./test/runTest.js"
+  "dependencies": {
+    "openai": "^3.0.2",
+    "vscode": "^1.74.0"
   },
-  "devDependencies": {
-    "@types/vscode": "^1.74.0",
-    "@types/glob": "^8.0.0",
-    "@types/mocha": "^10.0.1",
-    "@types/node": "16.x",
-    "eslint": "^8.28.0",
-    "glob": "^8.0.3",
-    "mocha": "^10.1.0",
-    "typescript": "^4.9.3",
-    "@vscode/test-electron": "^2.2.0"
+  "scripts": {
+    "test": "echo 'Error: no test specified' && exit 1"
   }
 }

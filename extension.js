@@ -29,13 +29,13 @@ function activate(context) {
 
     openai.api_key = api_key
 
-    let disposable = vscode.commands.registerCommand('gpt-error-fix-recommender-42.recommendFix', function () {
+    let disposable = vscode.commands.registerCommand('gpt-recommend-solution', function () {
         error_messages = vscode.window.createOutputChannel("error").display.slice(-10)
         recommendation = get_recommendation(error_messages)
         vscode.window.showInformationMessage(recommendation)
     });
-
-    context.subscriptions.push(disposable);
+    
+    context.subscriptions.push(disposable);    
 }
 
 // This method is called when your extension is deactivated
