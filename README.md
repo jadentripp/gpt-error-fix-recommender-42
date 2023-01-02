@@ -1,65 +1,31 @@
-# gpt-error-fix-recommender-42 README
+#gpt-error-fix-recommender-42
+A Visual Studio Code extension that uses OpenAI's GPT-3 model to recommend solutions to programming errors.
 
-This is the README for your extension "gpt-error-fix-recommender-42". After writing up a brief description, we recommend including the following sections.
+#Features
+Automatically detects and troubleshoots the latest error messages in the console.
+Provides a recommendation on how to fix the errors.
+#Requirements
+An OpenAI API key. If you don't have an API key, you can get one by signing up for a free account at https://beta.openai.com/signup.
+#Extension Settings
+This extension requires an OpenAI API key to function. To enter your API key, open the command palette by pressing Ctrl+Shift+P on Windows or Shift+Command+P on macOS, and type Recommend Solution.
 
-## Features
+Note: Please use this extension sparingly as it will consume API calls from your free quota.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+#Known Issues
+The extension may not work with all types of errors.
+#Release Notes
+1.0.0
+Initial release of gpt-error-fix-recommender-42.
 
-For example if there is an image subfolder under your extension project workspace:
+1.1.0
+Added support for troubleshooting multiple errors at once.
 
-\!\[feature X\]\(images/feature-x.png\)
+1.2.0
+Improved error detection and recommendation accuracy.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+#Working with the Extension
+To use the extension, open the command palette by pressing Ctrl+Shift+P on Windows or Shift+Command+P on macOS, and type Recommend Solution. This will prompt you to enter your OpenAI API key and then display a recommendation based on the latest error messages in the console.
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+#For more information
+OpenAI API documentation
+Enjoy!
